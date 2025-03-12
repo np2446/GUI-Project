@@ -4,7 +4,7 @@
 
 React Fund Dashboard is an interactive web application for visualizing and exploring investment fund data. This dashboard provides financial professionals with intuitive visualizations of Assets Under Management (AUM), fund type breakdowns, and detailed asset allocations.
 
-The dashboard was designed to provide a modern, responsive interface that allows users to drill down from high-level fund type overviews to specific asset details through an intuitive click-based navigation system.
+The dashboard was designed to provide a modern, responsive interface that allows users to drill down from high-level fund-type overviews to specific asset details through an intuitive click-based navigation system.
 
 ![Fund Dashboard Screenshot](./screenshot.png)
 
@@ -35,8 +35,8 @@ The dashboard was designed to provide a modern, responsive interface that allows
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/react-fund-dashboard.git
-   cd react-fund-dashboard
+   git clone https://github.com/np2446/GUI-Project
+   cd GUI-Project
    ```
 
 2. Install dependencies:
