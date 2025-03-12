@@ -1,0 +1,256 @@
+/**
+ * Fund Dashboard Global Stylesheet
+ * 
+ * This stylesheet provides global styling for the Fund Dashboard application.
+ * It implements a clean, modern financial interface with responsive design.
+ */
+
+/* Import font families from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Global reset and base styles */
+* { 
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * Layout Components
+ */
+
+/* Main container - centered content with shadow and rounded corners */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 24px;
+    background: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+/* Page header with bottom border */
+.header {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+/**
+ * Chart Components
+ */
+
+/* Chart container with subtle elevation and hover effect */
+.chart-container {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 24px;
+    border: 1px solid #f3f4f6;
+}
+
+/* Elevate chart on hover for interactive feel */
+.chart-container:hover {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Flexible row layout for charts with gap between items */
+.chart-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* Equal-width columns for chart placement with minimum width */
+.chart-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Chart title styling */
+.chart-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+/* Secondary text for chart headers */
+.chart-subtitle {
+    font-size: 16px;
+    color: #4b5563;
+    margin-left: 12px;
+    font-weight: 500;
+}
+
+/* Container for chart title and subtitle with flex layout */
+.chart-header {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/**
+ * Fund Details Section
+ */
+
+/* Container for the detailed fund breakdown with animation */
+.fund-details {
+    margin-top: 24px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border: 1px solid #f3f4f6;
+    animation: fadeIn 0.5s;
+}
+
+/* Title for the fund details section */
+.fund-details-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 16px;
+}
+
+/**
+ * Table Styling
+ */
+
+/* Base table styling with fixed layout for consistent column widths */
+.detail-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    overflow: hidden;
+    table-layout: fixed;
+}
+
+/* Table header styling with distinct background */
+.table-header th {
+    background-color: #f3f4f6 !important;
+    color: #374151 !important;
+    font-weight: 600 !important;
+    padding: 12px 16px !important;
+    border-bottom: 2px solid #e5e7eb !important;
+}
+
+/* Left-aligned first column (Asset names) */
+.table-header th:first-child {
+    text-align: left !important;
+    width: 40%;
+}
+
+/* Right-aligned value columns (MV and Equity) */
+.table-header th:nth-child(2),
+.table-header th:nth-child(3) {
+    text-align: right !important;
+    width: 30%;
+}
+
+/* Table cell styling with consistent padding and border */
+.table-row td {
+    padding: 12px 16px !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    color: #4b5563 !important;
+}
+
+/* Alignment for asset names (left) */
+.table-row td:first-child {
+    text-align: left !important;
+}
+
+/* Alignment for value columns (right) */
+.table-row td:nth-child(2),
+.table-row td:nth-child(3) {
+    text-align: right !important;
+}
+
+/* Subtle highlight on row hover */
+.table-row:hover td {
+    background-color: #f9fafb !important;
+}
+
+/* Special styling for total row with bold text and distinct background */
+.total-row {
+    font-weight: 600;
+    border-top: 2px solid #e5e7eb;
+    background-color: #f9fafb;
+}
+
+/**
+ * Footer
+ */
+
+/* Page footer with subtle text */
+.footer {
+    text-align: center;
+    margin-top: 48px;
+    padding: 24px;
+}
+
+.footer p {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+/**
+ * Animations
+ */
+
+/* Fade-in animation for smoother transitions */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/**
+ * Responsive Design
+ */
+
+/* Stack charts vertically on smaller screens */
+@media (max-width: 768px) {
+    .chart-row {
+        flex-direction: column;
+    }
+    
+    .chart-column {
+        width: 100%;
+    }
+}
+
+/**
+ * Chart Title Styling
+ * 
+ * Custom HTML title element used instead of Chart.js built-in title
+ * for more consistent cross-browser rendering
+ */
+.chart-internal-title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 12px;
+    padding: 0 8px;
+} 
