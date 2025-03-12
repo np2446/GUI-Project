@@ -107,16 +107,3 @@ Chart appearance can be customized in:
 - `src/components/PieChart.js`: For chart-specific options
 - `src/index.css`: For global styling
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Dashboard design inspired by modern financial interfaces
-- Chart.js for the excellent charting library
-- React team for the component framework 
